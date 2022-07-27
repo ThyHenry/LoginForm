@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url("London-street-light-sunset-city-street-cityscape-116457-wallhere.com.jpg") no-repeat center center;
+    background-size: cover ;
+}
+
+/* questionario */
+#questionary {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    background: rgba(138, 138, 138, 0.135);
+    backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 1px 2px 10px 3px #000000;
+}
+
+#title {
+    color: white;
+    padding-bottom: 40px;
+}
+
+#login {
+    position: relative;
+    width: 208px;
+}
+
+
+#visible {
+    position: relative;
+    background: white;
+    margin-top: 50px;
+    padding: 4px;
+    border-radius: 4px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#form-pass {
+    padding-top: 48px;
+}
+
+#l-pass {
+    margin-top: 48px;
+}
+
+.form-input {
+    position: absolute;
+    border: 2px solid white;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 5px;
+    background: white;
+}
+
+.form-input:hover {
+    border-color: rgb(85, 87, 87)
+}
+
+.form-input:focus {
+    border-color: rgb(85, 87, 87);
+}
+
+.form-label {
+    position: absolute;
+    left: 1rem;
+    top: 6px;
+    padding: 0 0.5rem;
+    color: black;
+    cursor: text;
+    transition: top 200ms ease-in, 
+    left 200ms ease-in, 
+    font-size 200ms ease-in;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.form-input:focus ~ .form-label,
+.form-input:not(:placeholder-shown).form-input:not(:focus)~.form-label {
+    top: -0.6rem;
+    font-size: 13px;
+    left: 0.8rem;
+}
+
+#field {
+    height: 33px;
+    background: #22222e;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid #22222e
+}
+
+#field:hover {
+    background: #2e2e33;
+    border-color: #2e2e33;
+}
+
+#together {
+    display: flex;
+    align-items: flex-end;
+}
+
+#forgot {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#help {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+#help:hover {
+    text-decoration: underline;
+}
+
+#button {
+    background: rgba(255, 255, 255, 0);
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+/* relogio */
+
+#clock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(138, 138, 138, 0.135);
+    backdrop-filter: blur(3px);
+    position: absolute;
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 1px 2px 10px 2px #000000;
+    top: 0;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+#day {
+    font-size: 16px;
+}
+
+@media (max-width: 450px) {
+    #clock {
+        width: 300px;
+        position: relative;
+        margin-left: 0;
+        margin-top: 0;
+        padding: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-bottom: 130px;
+    }
+
+    #questionary {
+        margin-top: -150px;
+    }
+}
+
+@media (max-width: 300px) {
+
+    body {
+        width: 100%;
+        backdrop-filter: blur(2px);
+    }
+
+    #questionary {
+        width: 100%;
+        background: none;
+        box-shadow: none;
+        margin-top: -300px;
+    }
+
+    #clock {
+        background: none;
+        box-shadow: none;
+    }
+}
