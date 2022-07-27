@@ -8,10 +8,10 @@ const day = document.getElementById("day");
 visible.addEventListener("click", ()=> {
     if(pass.type === "password") {
         pass.type = "text",
-        visible.setAttribute("src", "icons8-visível-24.png");
+        visible.setAttribute("src", "../images/icons8-visível-24.png");
     } else {
         pass.type = "password",
-        visible.setAttribute("src", "icons8-ocultar-24.png");
+        visible.setAttribute("src", "../images/icons8-ocultar-24.png");
     }
 })
 
