@@ -34,6 +34,4 @@ const clock = setInterval(function clock() {
     time.innerHTML = total_time;
     let today = mt + " " + d + " " + day_n;
     day.innerHTML = today;
-
-    console.log(s)
 },1000)
